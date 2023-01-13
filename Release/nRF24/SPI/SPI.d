@@ -1,0 +1,3 @@
+nRF24/SPI/SPI.o: ../nRF24/SPI/SPI.c ../nRF24/SPI/SPI.h
+
+../nRF24/SPI/SPI.h:

@@ -1,0 +1,817 @@
+Archive member included because of file (symbol)
+
+c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+                              ./Joystick/joystick.o (__divmodhi4)
+c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                              c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o (exit)
+c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                              ./Joystick/joystick.o (__do_copy_data)
+c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                              ./nRF24/nRF24.o (__do_clear_bss)
+c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+                              c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o) (__udivmodhi4)
+c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(itoa_ncheck.o)
+                              ./UART/uart.o (__itoa_ncheck)
+c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(utoa_ncheck.o)
+                              c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(itoa_ncheck.o) (__utoa_common)
+c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strrev.o)
+                              c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(utoa_ncheck.o) (strrev)
+
+Allocating common symbols
+Common symbol       size              file
+
+SoftTimer1          0x1               ./main.o
+Motor_number        0x1               ./main.o
+UartData            0x1               ./main.o
+UartRxTail          0x1               ./UART/uart.o
+UartRxBuffer        0x10              ./UART/uart.o
+KeyFlag             0x1               ./main.o
+i                   0x1               ./main.o
+UartTxTail          0x1               ./UART/uart.o
+byte                0x1               ./main.o
+UartTxBuffer        0x10              ./UART/uart.o
+UartTxHead          0x1               ./UART/uart.o
+payload             0xa               ./main.o
+SendPerm            0x1               ./main.o
+UartRxHead          0x1               ./UART/uart.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+LOAD ./nRF24/SPI/SPI.o
+LOAD ./nRF24/nRF24.o
+LOAD ./UART/uart.o
+LOAD ./Joystick/joystick.o
+LOAD ./klebot_transmiter.o
+LOAD ./main.o
+START GROUP
+LOAD c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a
+LOAD c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
+LOAD c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a
+LOAD c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libatmega328p.a
+END GROUP
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xf5a
+ *(.vectors)
+ .vectors       0x00000000       0x68 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x00000068                . = ALIGN (0x2)
+                0x00000068                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000068        0x0 linker stubs
+ *(.trampolines*)
+                0x00000068                __trampolines_end = .
+ *(.progmem*)
+                0x00000068                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000068                __ctors_start = .
+ *(.ctors)
+                0x00000068                __ctors_end = .
+                0x00000068                __dtors_start = .
+ *(.dtors)
+                0x00000068                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000068        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x00000068                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000068        0xc c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000074       0x16 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                0x00000074                __do_copy_data
+ .init4         0x0000008a       0x10 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000008a                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000009a        0x8 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+ *(.init9)
+ *(.text)
+ .text          0x000000a2        0x4 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x000000a2                __vector_22
+                0x000000a2                __vector_1
+                0x000000a2                __vector_24
+                0x000000a2                __vector_12
+                0x000000a2                __bad_interrupt
+                0x000000a2                __vector_6
+                0x000000a2                __vector_3
+                0x000000a2                __vector_23
+                0x000000a2                __vector_25
+                0x000000a2                __vector_11
+                0x000000a2                __vector_13
+                0x000000a2                __vector_17
+                0x000000a2                __vector_5
+                0x000000a2                __vector_4
+                0x000000a2                __vector_9
+                0x000000a2                __vector_21
+                0x000000a2                __vector_15
+                0x000000a2                __vector_8
+                0x000000a2                __vector_14
+                0x000000a2                __vector_10
+                0x000000a2                __vector_16
+                0x000000a2                __vector_20
+ .text          0x000000a6        0x0 ./nRF24/SPI/SPI.o
+ .text          0x000000a6        0x0 ./nRF24/nRF24.o
+ .text          0x000000a6        0x0 ./UART/uart.o
+ .text          0x000000a6        0x0 ./Joystick/joystick.o
+ .text          0x000000a6        0x0 ./klebot_transmiter.o
+ .text          0x000000a6        0x0 ./main.o
+ .text          0x000000a6        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text          0x000000a6        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text          0x000000a6        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text          0x000000a6        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text          0x000000a6        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x000000a6        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(itoa_ncheck.o)
+ .text          0x000000a6        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(utoa_ncheck.o)
+ .text          0x000000a6        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strrev.o)
+                0x000000a6                . = ALIGN (0x2)
+ *(.text.*)
+ .text.SPI_Init
+                0x000000a6       0x10 ./nRF24/SPI/SPI.o
+                0x000000a6                SPI_Init
+ .text.SPI_Send
+                0x000000b6       0x1a ./nRF24/SPI/SPI.o
+                0x000000b6                SPI_Send
+ .text.SPI_Read
+                0x000000d0       0x1a ./nRF24/SPI/SPI.o
+                0x000000d0                SPI_Read
+ .text.nRF24_WriteRegister
+                0x000000ea       0x28 ./nRF24/nRF24.o
+ .text.nRF24_WriteRegisters
+                0x00000112       0x3c ./nRF24/nRF24.o
+ .text.nRF24_ReadRegister
+                0x0000014e       0x30 ./nRF24/nRF24.o
+ .text.nRF24_ReadRegisters
+                0x0000017e       0x3a ./nRF24/nRF24.o
+ .text.nRF24_SetRXAddress.part.1
+                0x000001b8       0x34 ./nRF24/nRF24.o
+ .text.nRF24_ReadConfig
+                0x000001ec        0x6 ./nRF24/nRF24.o
+                0x000001ec                nRF24_ReadConfig
+ .text.nRF24_WriteConfig
+                0x000001f2        0x8 ./nRF24/nRF24.o
+                0x000001f2                nRF24_WriteConfig
+ .text.nRF24_SetPALevel
+                0x000001fa       0x1a ./nRF24/nRF24.o
+                0x000001fa                nRF24_SetPALevel
+ .text.nRF24_SetDataRate
+                0x00000214       0x24 ./nRF24/nRF24.o
+                0x00000214                nRF24_SetDataRate
+ .text.nRF24_ReadStatus
+                0x00000238        0x6 ./nRF24/nRF24.o
+                0x00000238                nRF24_ReadStatus
+ .text.nRF24_WriteStatus
+                0x0000023e        0x8 ./nRF24/nRF24.o
+                0x0000023e                nRF24_WriteStatus
+ .text.nRF24_ReadFifoStatus
+                0x00000246        0x6 ./nRF24/nRF24.o
+                0x00000246                nRF24_ReadFifoStatus
+ .text.nRF24_WriteFifoStatus
+                0x0000024c        0x8 ./nRF24/nRF24.o
+                0x0000024c                nRF24_WriteFifoStatus
+ .text.nRF24_IsBitSetInFifoStatus
+                0x00000254       0x1a ./nRF24/nRF24.o
+                0x00000254                nRF24_IsBitSetInFifoStatus
+ .text.nRF24_IsTxReuse
+                0x0000026e        0x6 ./nRF24/nRF24.o
+                0x0000026e                nRF24_IsTxReuse
+ .text.nRF24_IsTxEmpty
+                0x00000274        0x6 ./nRF24/nRF24.o
+                0x00000274                nRF24_IsTxEmpty
+ .text.nRF24_IsRxFull
+                0x0000027a        0x6 ./nRF24/nRF24.o
+                0x0000027a                nRF24_IsRxFull
+ .text.nRF24_IsRxEmpty
+                0x00000280        0x6 ./nRF24/nRF24.o
+                0x00000280                nRF24_IsRxEmpty
+ .text.nRF24_IsTxFull
+                0x00000286        0x4 ./nRF24/nRF24.o
+                0x00000286                nRF24_IsTxFull
+ .text.nRF24_FlushRX
+                0x0000028a       0x24 ./nRF24/nRF24.o
+                0x0000028a                nRF24_FlushRX
+ .text.nRF24_FlushTX
+                0x000002ae       0x24 ./nRF24/nRF24.o
+                0x000002ae                nRF24_FlushTX
+ .text.nRF24_TX_Mode
+                0x000002d2       0x2a ./nRF24/nRF24.o
+                0x000002d2                nRF24_TX_Mode
+ .text.nRF24_RX_Mode
+                0x000002fc       0x3a ./nRF24/nRF24.o
+                0x000002fc                nRF24_RX_Mode
+ .text.nRF24_EnableCRC
+                0x00000336       0x18 ./nRF24/nRF24.o
+                0x00000336                nRF24_EnableCRC
+ .text.nRF24_SetCRCLength
+                0x0000034e       0x18 ./nRF24/nRF24.o
+                0x0000034e                nRF24_SetCRCLength
+ .text.nRF24_SetRetries
+                0x00000366       0x12 ./nRF24/nRF24.o
+                0x00000366                nRF24_SetRetries
+ .text.nRF24_SetRFChannel
+                0x00000378        0xa ./nRF24/nRF24.o
+                0x00000378                nRF24_SetRFChannel
+ .text.nRF24_SetPayloadSize
+                0x00000382        0xe ./nRF24/nRF24.o
+                0x00000382                nRF24_SetPayloadSize
+ .text.nRF24_EnablePipe
+                0x00000390       0x36 ./nRF24/nRF24.o
+                0x00000390                nRF24_EnablePipe
+ .text.nRF24_AutoACK
+                0x000003c6       0x36 ./nRF24/nRF24.o
+                0x000003c6                nRF24_AutoACK
+ .text.nRF24_SetAddressWidth
+                0x000003fc       0x18 ./nRF24/nRF24.o
+                0x000003fc                nRF24_SetAddressWidth
+ .text.nRF24_SetRXAddress
+                0x00000414       0x12 ./nRF24/nRF24.o
+                0x00000414                nRF24_SetRXAddress
+ .text.nRF24_SetTXAddress
+                0x00000426       0x6a ./nRF24/nRF24.o
+                0x00000426                nRF24_SetTXAddress
+ .text.nRF24_ClearInterrupts
+                0x00000490        0xa ./nRF24/nRF24.o
+                0x00000490                nRF24_ClearInterrupts
+ .text.nRF24_GetDynamicPayloadSize
+                0x0000049a       0x1e ./nRF24/nRF24.o
+                0x0000049a                nRF24_GetDynamicPayloadSize
+ .text.nRF24_EnableRXDataReadyIRQ
+                0x000004b8       0x18 ./nRF24/nRF24.o
+                0x000004b8                nRF24_EnableRXDataReadyIRQ
+ .text.nRF24_EnableTXDataSentIRQ
+                0x000004d0       0x18 ./nRF24/nRF24.o
+                0x000004d0                nRF24_EnableTXDataSentIRQ
+ .text.nRF24_EnableMaxRetransmitIRQ
+                0x000004e8       0x18 ./nRF24/nRF24.o
+                0x000004e8                nRF24_EnableMaxRetransmitIRQ
+ .text.nRF24_WriteTXPayload
+                0x00000500        0xa ./nRF24/nRF24.o
+                0x00000500                nRF24_WriteTXPayload
+ .text.nRF24_WaitTX
+                0x0000050a       0x26 ./nRF24/nRF24.o
+                0x0000050a                nRF24_WaitTX
+ .text.nRF24_ReadRXPaylaod
+                0x00000530       0x26 ./nRF24/nRF24.o
+                0x00000530                nRF24_ReadRXPaylaod
+ .text.nRF24_SendPacket
+                0x00000556       0x14 ./nRF24/nRF24.o
+                0x00000556                nRF24_SendPacket
+ .text.nRF24_ReceivePacket
+                0x0000056a        0x6 ./nRF24/nRF24.o
+                0x0000056a                nRF24_ReceivePacket
+ .text.nRF24_RXAvailible
+                0x00000570       0x1e ./nRF24/nRF24.o
+                0x00000570                nRF24_RXAvailible
+ .text.nRF24_IRQ_Handler
+                0x0000058e        0x8 ./nRF24/nRF24.o
+                0x0000058e                nRF24_IRQ_Handler
+ .text.nRF24_IRQ_Read
+                0x00000596       0x44 ./nRF24/nRF24.o
+                0x00000596                nRF24_IRQ_Read
+ .text.nRF24_EventRxCallback
+                0x000005da        0x2 ./nRF24/nRF24.o
+                0x000005da                nRF24_EventRxCallback
+ .text.nRF24_EventTxCallback
+                0x000005dc        0x2 ./nRF24/nRF24.o
+ .text.nRF24_EventMrCallback
+                0x000005de        0x2 ./nRF24/nRF24.o
+                0x000005de                nRF24_EventMrCallback
+ .text.nRF24_Event
+                0x000005e0       0x36 ./nRF24/nRF24.o
+                0x000005e0                nRF24_Event
+ .text.nRF24_Init
+                0x00000616       0x98 ./nRF24/nRF24.o
+                0x00000616                nRF24_Init
+ .text.uart_init
+                0x000006ae       0x20 ./UART/uart.o
+                0x000006ae                uart_init
+ .text.uart_sendc
+                0x000006ce        0xe ./UART/uart.o
+                0x000006ce                uart_sendc
+ .text.uart_sends
+                0x000006dc       0x18 ./UART/uart.o
+                0x000006dc                uart_sends
+ .text.uart_sendi
+                0x000006f4       0x32 ./UART/uart.o
+                0x000006f4                uart_sendi
+ .text.uart_receivec
+                0x00000726        0xe ./UART/uart.o
+                0x00000726                uart_receivec
+ .text.__vector_18
+                0x00000734       0x4c ./UART/uart.o
+                0x00000734                __vector_18
+ .text.uart_readc
+                0x00000780       0x2a ./UART/uart.o
+                0x00000780                uart_readc
+ .text.__vector_19
+                0x000007aa       0x58 ./UART/uart.o
+                0x000007aa                __vector_19
+ .text.uart_writec
+                0x00000802       0x2c ./UART/uart.o
+                0x00000802                uart_writec
+ .text.uart_writes
+                0x0000082e       0x18 ./UART/uart.o
+                0x0000082e                uart_writes
+ .text.ADC_Init
+                0x00000846       0x1c ./Joystick/joystick.o
+                0x00000846                ADC_Init
+ .text.ADC_Read
+                0x00000862       0x30 ./Joystick/joystick.o
+                0x00000862                ADC_Read
+ .text.Joy_SetIdleValues
+                0x00000892       0x1c ./Joystick/joystick.o
+                0x00000892                Joy_SetIdleValues
+ .text.Joy_ReadXY
+                0x000008ae       0x1c ./Joystick/joystick.o
+                0x000008ae                Joy_ReadXY
+ .text.Joy_GetDeviationPercent
+                0x000008ca       0x58 ./Joystick/joystick.o
+                0x000008ca                Joy_GetDeviationPercent
+ .text.Joy_GetX
+                0x00000922        0x6 ./Joystick/joystick.o
+                0x00000922                Joy_GetX
+ .text.Joy_GetY
+                0x00000928        0x6 ./Joystick/joystick.o
+                0x00000928                Joy_GetY
+ .text.KleTransmiter_SendMovementPatternCommand
+                0x0000092e       0x24 ./klebot_transmiter.o
+                0x0000092e                KleTransmiter_SendMovementPatternCommand
+ .text.KleTransmiter_JoySteering
+                0x00000952       0x7c ./klebot_transmiter.o
+                0x00000952                KleTransmiter_JoySteering
+ .text.__vector_2
+                0x000009ce       0x48 ./main.o
+                0x000009ce                __vector_2
+ .text.__vector_7
+                0x00000a16       0x2a ./main.o
+                0x00000a16                __vector_7
+ .text.nRF24_EventTxCallback
+                0x00000a40        0x6 ./main.o
+                0x00000a40                nRF24_EventTxCallback
+ .text.HW_Timer2Init
+                0x00000a46       0x28 ./main.o
+                0x00000a46                HW_Timer2Init
+ .text.MakeFrame
+                0x00000a6e       0x32 ./main.o
+                0x00000a6e                MakeFrame
+ .text.Debounce
+                0x00000aa0       0xc4 ./main.o
+                0x00000aa0                Debounce
+ .text.Joystick_monitor
+                0x00000b64       0x8e ./main.o
+                0x00000b64                Joystick_monitor
+ .text.startup.main
+                0x00000bf2      0x2aa ./main.o
+                0x00000bf2                main
+ .text.libgcc.mul
+                0x00000e9c        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.div
+                0x00000e9c       0x28 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+                0x00000e9c                _div
+                0x00000e9c                __divmodhi4
+ .text.libgcc   0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.prologue
+                0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.builtins
+                0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.fmul
+                0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.fixed
+                0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.mul
+                0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000ec4        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.div
+                0x00000ec4       0x28 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+                0x00000ec4                __udivmodhi4
+ .text.libgcc   0x00000eec        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x00000eec        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x00000eec        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x00000eec        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x00000eec        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.avr-libc
+                0x00000eec       0x16 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(itoa_ncheck.o)
+                0x00000eec                __itoa_ncheck
+ .text.avr-libc
+                0x00000f02       0x34 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(utoa_ncheck.o)
+                0x00000f02                __utoa_ncheck
+                0x00000f04                __utoa_common
+ .text.avr-libc
+                0x00000f36       0x20 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strrev.o)
+                0x00000f36                strrev
+                0x00000f56                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000f56        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00000f56                _exit
+                0x00000f56                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000f56        0x4 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000f5a                _etext = .
+
+.data           0x00800100       0x42 load address 0x00000f5a
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .data          0x00800100        0x0 ./nRF24/SPI/SPI.o
+ .data          0x00800100        0x0 ./nRF24/nRF24.o
+ .data          0x00800100        0x0 ./UART/uart.o
+ .data          0x00800100        0x0 ./Joystick/joystick.o
+ .data          0x00800100        0x0 ./klebot_transmiter.o
+ .data          0x00800100        0x0 ./main.o
+ .data          0x00800100        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .data          0x00800100        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .data          0x00800100        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800100        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00800100        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x00800100        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(itoa_ncheck.o)
+ .data          0x00800100        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(utoa_ncheck.o)
+ .data          0x00800100        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strrev.o)
+ *(.data*)
+ .data.Joystick2
+                0x00800100        0x6 ./Joystick/joystick.o
+                0x00800100                Joystick2
+ .data.Joystick1
+                0x00800106        0x6 ./Joystick/joystick.o
+                0x00800106                Joystick1
+ .data.PWM      0x0080010c        0x1 ./main.o
+                0x0080010c                PWM
+ .data.address1
+                0x0080010d        0x3 ./main.o
+                0x0080010d                address1
+ .data.address0
+                0x00800110        0x3 ./main.o
+                0x00800110                address0
+ *(.rodata)
+ *(.rodata*)
+ .rodata.str1.1
+                0x00800113       0x2e ./main.o
+ *(.gnu.linkonce.d*)
+                0x00800142                . = ALIGN (0x2)
+ *fill*         0x00800141        0x1 
+                0x00800142                _edata = .
+                0x00800142                PROVIDE (__data_end, .)
+
+.bss            0x00800142       0x3e
+                0x00800142                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800142        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .bss           0x00800142        0x0 ./nRF24/SPI/SPI.o
+ .bss           0x00800142        0x0 ./nRF24/nRF24.o
+ .bss           0x00800142        0x0 ./UART/uart.o
+ .bss           0x00800142        0x0 ./Joystick/joystick.o
+ .bss           0x00800142        0x0 ./klebot_transmiter.o
+ .bss           0x00800142        0x0 ./main.o
+ .bss           0x00800142        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .bss           0x00800142        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .bss           0x00800142        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800142        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00800142        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x00800142        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(itoa_ncheck.o)
+ .bss           0x00800142        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(utoa_ncheck.o)
+ .bss           0x00800142        0x0 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strrev.o)
+ *(.bss*)
+ .bss.Nrf24InterruptFlag
+                0x00800142        0x1 ./nRF24/nRF24.o
+ .bss.nrf24_mr_flag
+                0x00800143        0x1 ./nRF24/nRF24.o
+ .bss.nrf24_tx_flag
+                0x00800144        0x1 ./nRF24/nRF24.o
+ .bss.nrf24_rx_flag
+                0x00800145        0x1 ./nRF24/nRF24.o
+ .bss.addr_p0_backup
+                0x00800146        0x3 ./nRF24/nRF24.o
+ .bss.key_state.2135
+                0x00800149        0x1 ./main.o
+ .bss.last_key.2136
+                0x0080014a        0x1 ./main.o
+ *(COMMON)
+ COMMON         0x0080014b       0x24 ./UART/uart.o
+                0x0080014b                UartRxTail
+                0x0080014c                UartRxBuffer
+                0x0080015c                UartTxTail
+                0x0080015d                UartTxBuffer
+                0x0080016d                UartTxHead
+                0x0080016e                UartRxHead
+ COMMON         0x0080016f       0x11 ./main.o
+                0x0080016f                SoftTimer1
+                0x00800170                Motor_number
+                0x00800171                UartData
+                0x00800172                KeyFlag
+                0x00800173                i
+                0x00800174                byte
+                0x00800175                payload
+                0x0080017f                SendPerm
+                0x00800180                PROVIDE (__bss_end, .)
+                0x00000f5a                __data_load_start = LOADADDR (.data)
+                0x00000f9c                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800180        0x0
+                0x00800180                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800180                PROVIDE (__noinit_end, .)
+                0x00800180                _end = .
+                0x00800180                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x30
+ *(.comment)
+ .comment       0x00000000       0x30 ./nRF24/SPI/SPI.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000000       0x31 ./nRF24/nRF24.o
+ .comment       0x00000000       0x31 ./UART/uart.o
+ .comment       0x00000000       0x31 ./Joystick/joystick.o
+ .comment       0x00000000       0x31 ./klebot_transmiter.o
+ .comment       0x00000000       0x31 ./main.o
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x40 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000      0x5f4
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x5f4 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+
+.debug_abbrev   0x00000000      0x5a2
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x5a2 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+
+.debug_line     0x00000000       0x1a
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000       0x1a c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x00000000      0x208
+ *(.debug_str)
+ .debug_str     0x00000000      0x208 c:/users/miqix/documents/mkclipse/avr toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(25_Transmiter.elf elf32-avr)
+LOAD linker stubs
